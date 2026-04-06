@@ -99,12 +99,9 @@ const JobDetails = () => {
             
             <form onSubmit={handleBidSubmit} className="flex flex-col gap-6">
               <div>
-                <label className="block text-sm font-semibold text-gray-700 mb-2">Your Bid (₹)</label>
+                <label className="block text-sm font-semibold text-gray-700 mb-2">Your Bid</label>
                 <div className="relative">
-                  <div className="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
-                    <IndianRupee className="w-5 h-5 text-gray-400" />
-                  </div>
-                  <input className="input-premium pl-11 text-lg font-bold text-green-700" type="number" required value={amount} onChange={(e) => setAmount(e.target.value)} />
+                  <input className="input-premium pl-4 text-lg font-bold text-green-700" type="number" required value={amount} onChange={(e) => setAmount(e.target.value)} />
                 </div>
               </div>
               <div>
